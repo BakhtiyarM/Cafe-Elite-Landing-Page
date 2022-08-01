@@ -1,0 +1,695 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: gray; 
+
+}
+
+/* Nav Bar */
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+    background: black;
+    top: 0;
+    padding: 20px;
+    user-select: none;
+}
+
+.nav-width{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;    
+}
+.menu{
+    margin-left: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navbar .nav-width i{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-width .menu a,
+.nav-width .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nav-width .logo a{
+    font-size: 20px;
+}
+.nav-width .fa-bars{
+    display: none;
+}
+
+/* Home Section */
+
+.home{
+    width: 100%;
+    background: url(../img/background-1.jpeg) no-repeat center;
+    height: 100vh;
+    min-height: 00px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home--width{
+    margin-top: 50px;
+    width: 500px;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+.text-1{
+    font-size: 28px;
+}
+.text-2{
+    font-size: 16px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.1s ease;
+
+}
+.a-button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.bookstore:hover,
+.see:hover{
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    transform: scale(1.1);
+}
+.a-button a{
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Discovery Section */
+
+.discovery{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.dscvry--width{
+    width: 750px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    background: transparent;
+}
+.dscvry--left{
+    width: 45%;
+    color: gray;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dscvry--right{
+    width: 55%;
+    color: gray;
+    font-size: 15px;
+}
+.dscvry--right p{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* About Section */
+
+.about{
+    width: 100%;
+    height: 750px;
+    background: transparent;
+}
+.about .title{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.promise{
+    width: 100%;
+    height: calc(750px - 80px);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promise .promise--cards{
+    background-color: transparent;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
+}
+.promise .promise--cards .promise--card{
+    background: transparent;
+    width: 800px;
+    height: calc(700px / 3 - 20px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.promise--card .promise--left{
+    width: 50%;
+    height: 200px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: 300;
+}
+.promise--left p{
+    font-size: 13px;
+    text-align: end;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.promise--left h2{
+    margin-right: 15px;
+}
+
+.promise--card .promise--right{
+    width: 50%;
+    margin-top: 5px;
+}
+.promise--right img{
+    width: 100%;
+}
+
+/* Book Section */
+
+.book{
+    width: 100%;
+    background: url(../img/background-2.jpeg) no-repeat center;
+    max-height: 300px;
+    margin-top: 200px;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.book .book--btn{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.book .book--btn a{
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Team Section */
+
+.team{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    display: flex;flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.team .title{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.team .team--cards{
+    background-color: transparent;
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.team--cards .team--card{
+    width: calc(1000px / 3 - 10px);
+    height: 150px;
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;    
+}
+.team--card:hover{
+    transform: scale(1.15);
+    transition: all 0.3s ease;
+    background: wheat;
+}
+.team--card .left--card{
+    width: 40%;
+}
+.left--card img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-left: -15px;
+    border-radius: 40px 0 0 40px;
+}
+.team--card .right--card{
+    width: 60%;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+.right--card .card--text{
+    background: transparent;
+    width: 220px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: -32px;
+}
+.card--text h2{
+    font-size: 18px;
+    font-weight: 800;
+}
+.card--text p{
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Location Section */
+
+.location{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location--content{
+    width: 1200px;
+    height: 250px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.location--content h2{
+    text-transform: uppercase;
+}
+.location--content .location--left{
+    width: 400px;
+    height: 200px;
+    background: transparent;
+    text-align: center;
+    color: white;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location--left h2{
+    font-size: 18px;
+}
+.location--left p{
+font-size: 13px;
+}
+.location--right{
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+.clock{
+    margin-left: 25px;
+}
+.date p{
+    margin-top: 10px;
+}
+.location--right h2{
+    font-size: 18px;
+}
+
+footer{
+    color: white;
+    width: 100%;
+    height: 20px;
+}
+
+
+/* Responsive Section  */
+
+@media (max-width:1005px){
+    .navbar{
+        width: 1000px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        margin-left: 65px;
+    }
+    .nav-width .logo a{
+        font-size: 30px;
+    }
+    .nav-width .menu a{
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .home,.discovery,.promise,.book,.team,.location,footer,.about .title{
+        width: 1000px;
+    }
+}
+
+@media (max-width:805px){
+    body .home{
+        height: 1150px;
+    }
+    .navbar .menu{
+        display: none;
+    }
+    .navbar .logo a{
+        font-size: 50px;
+        margin-left: 320px;
+    }
+    .navbar .nav-width i{
+        display: block;
+        margin-left: 320px;
+        margin-top: 8px;
+    }
+    .home--width{
+        width: 800px;
+        height: 500px;
+    }
+    .text-1{
+        font-size: 50px
+    }
+    .text-2{
+        font-size: 32px;
+    }
+    .a-button a{
+        width: 200px;
+        height: 90px;
+        font-size: 16px;
+    }
+    .a-button .bookstore{
+        margin-left: 30px;
+    }
+    .discovery{
+        height: 300px;
+    }
+    .dscvry--right{
+        font-size: 20px;
+    }
+    .dscvry--left{
+        font-size: 23px;
+    }
+    .about .title{
+        font-size: 25px;
+    }
+    .about{
+        height: 900px;
+    }
+    .promise--cards{
+        margin-top: 150px;
+    }
+    .promise--card{
+        width: 1000px
+    }
+    .promise--card h2{
+        font-size: 30px;
+    }
+    .promise--left p{
+        text-align: right;
+        font-size: 15px;
+    }
+    .promise--left p,
+    .promise--left h2{
+        margin-right: 30px;
+    } 
+    .home .book a{
+        width: 200px;
+        height: 90px;
+        font-size: 16px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:505px){
+    .navbar{
+        width: 1000px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .logo a{
+        font-size: 50px;
+    }
+    .navbar .nav-width i{
+        font-size: 60px;
+        margin-left: 300px;
+    }
+    body .home{
+        height: 1800px;
+    }
+    .home--width{
+        width: 1000px;
+        height: 500px;
+    }
+    .text-1{
+        font-size: 60px
+    }
+    .text-2{
+        font-size: 37px;
+    }
+    .a-button a{
+        width: 300px;
+        height: 150px;
+        font-size: 30px;
+        border: 10px solid white;
+    }
+    .discovery{
+        height: 400px;
+    }
+    .dscvry--width{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .dscvry--left{
+        width: 600px;
+        font-size: 40px;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .dscvry--right{
+        width: 500px;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    .dscvry--right p{
+        font-size: 30px;
+    }
+    .promise--cards{
+        flex-direction: column;
+    }
+    body .book .book--btn a{
+        width: 300px;
+        height: 150px;
+        font-size: 25px;
+        border: 5px solid white;
+    }
+    body .team{
+        height: 1300px;
+    }
+    body .team .team--cards{
+        height: 1200px;
+        flex-direction: column;
+    }
+    body .team .team--cards .team--card{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20px;
+        width: 1000px;
+        height: 1200px;
+    }
+    body .team .team--width .team--cards{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .left--card{
+        display: none;
+    }
+    .right--card .card--text h2{
+        font-size: 50px;
+    }
+    .right--card .card--text{
+        background-color: transparent;
+        width: 550px;
+        height: 200px;
+    }
+    .right--card .card--text p{
+        font-size: 30px;
+    }
+    .promise .promise--left{
+        width: 400px;
+    }
+    .promise .promise--left h2{
+        font-size: 45px;
+    }
+    .promise .promise--left p{
+        font-size: 20px;
+    }
+
+    body .location{
+        height: 1000px;
+    }
+    body .location .location--content{
+        height: 700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .location--left{
+        margin-left: 90px;
+        margin-bottom: 50px;
+    }
+    body .location .location--content .location--left h2{
+        font-size: 50px;
+    }
+    body .location .location--content .location--left p{
+        font-size: 25px;
+    }
+    body .location .location--content .location--right h2{
+        font-size: 40px;
+    }
+    body .location .location--content .location--right p{
+        font-size: 28px;
+    }
+    footer{
+        font-size: 30px;
+    }
+}
