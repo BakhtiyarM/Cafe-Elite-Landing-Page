@@ -30,5 +30,5 @@ This project was developed using the following technologies
 
 ## SAMPLE SCREEN APPEARANCE
 
-![There was a screenshot here](./screenshot)
+![There was a screenshot here](./screencapture-127-0-0-1-5500-index-html-2022-08-01-14_49_03.png)
 
