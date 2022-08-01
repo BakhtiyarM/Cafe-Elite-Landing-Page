@@ -6,7 +6,7 @@
 
   # Cafe-Elite-Landing-Page
 
-Hello, welcome to this page. Today I create with html and css file for Netflix. I use here html and css tags. 
+Hello, welcome to this page. Today I create with html and css file for Cafe-Elite-Landing-Page. I use here html and css tags. 
 ## ## RULES OF USE
 
 > STEP-1: https://github.com/BakhtiyarM/Cafe-Elite-Landing-Page.git <br/>
